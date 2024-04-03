@@ -7,17 +7,15 @@ public class StoryRunner {
     
      public void story() {
 
-        System.out.println("\nINTRODUCTION: \n You find yourself standing at the edge of a dense forest,\n"
+        System.out.println("\n\t\tINTRODUCTION: \n\nYou find yourself standing at the edge of a dense forest,\n"
                          + "the last rays of sunlight fading away. A mysterious scroll lies at your feet,\n"
                          + "pulsating with magical energy. As you pick it up, the words on the scroll begin\n"
                          + "to glow, revealing a message: \"Seek the lost kingdom and claim your destiny.\"\n"
-                         + "Intrigued, you decide to embark on a quest to uncover the secrets of the lost kingdom");
-
-        System.out.println("\n\n\t\tSCENE 1. THE FORREST.\n\n"
-                + "You venture into the forest, the trees looming overhead like ancient guardians.\n"
-                + "Soon, you come across a fork in the path.");
-
-        System.out.println("Please Select a path (1 or 2): \n 1. Left path.\n 2. Right path");
+                         + "Intrigued, you decide to embark on a quest to uncover the secrets of the lost kingdom"
+                         + "\n\n\t\tSCENE 1. THE FORREST.\n\n"
+                         + "You venture into the forest, the trees looming overhead like ancient guardians.\n"
+                         + "Soon, you come across a fork in the path.\n"
+                         + "Please Select a path (1 or 2): \n 1. Left path.\n 2. Right path");
 
         int paths = sc.nextInt();
         
@@ -45,8 +43,8 @@ public class StoryRunner {
                 System.out.println("You choose the right path, which winds through thickets and thorns.\n"
                                  + "Soon, you find yourself lost in the maze of trees. As night falls,\n"
                                  + "you stumble upon a clearing where a group of sinister-looking creatures\n"
-                                 + "lurks in the shadows. They demand a toll for safe passage.");
-                 System.out.println("You can either (1 or 2):\n 1. Pay the toll.\n 2. Refuse to pay and fight your way through.");
+                                 + "lurks in the shadows. They demand a toll for safe passage.\n"
+                                 + "You can either (1 or 2):\n 1. Pay the toll.\n 2. Refuse to pay and fight your way through.");
                                  
                 int c1 = sc.nextInt();
                 while (true) {
@@ -76,13 +74,11 @@ public class StoryRunner {
                 break;
         }
         
-        System.out.println("\n\n\t\tSCENE 2: THE ENCHATED LAKE\n");
-        
-        System.out.println("As you journey deeper into the forest, you stumble upon a tranquil lake shimmering in the moonlight.\n"
+        System.out.println("\n\n\t\tSCENE 2: THE ENCHATED LAKE\n\n"
+                         + "As you journey deeper into the forest, you stumble upon a tranquil lake shimmering in the moonlight.\n"
                          + "A sense of peace washes over you, but your reverie is interrupted by a mysterious figure emerging from\n"
-                         + "the depths of the water.");
-        
-        System.out.println("Please select an action (1 or 2):\n 1. Approach the figure.\n 2. Ignore the figure and continue on your way.");
+                         + "the depths of the water.\n"
+                         + "Please select an action (1 or 2):\n 1. Approach the figure.\n 2. Ignore the figure and continue on your way.");
         
         int dec = sc.nextInt();
         
@@ -115,13 +111,10 @@ public class StoryRunner {
         }
         
         
-        System.out.println("\n\n\t\tSCENE 3: THE HIDDEN TEMPLE\n\n");
-        
-        
-         System.out.println("After hours of travel, you finally arrive at the entrance to a hidden temple concealed deep within the forest.\n"
-                          + " Ancient runes adorn the walls, their meaning obscured by time.");
-        
-        System.out.println("Please select an action (1 or 2):\n 1. Enter the temple.\n 2. Search for another way around.");
+        System.out.println("\n\n\t\tSCENE 3: THE HIDDEN TEMPLE\n\n"
+                          + "After hours of travel, you finally arrive at the entrance to a hidden temple concealed deep within the forest.\n"
+                          + "Ancient runes adorn the walls, their meaning obscured by time.\n"
+                          + "Please select an action (1 or 2):\n 1. Enter the temple.\n 2. Search for another way around.");
         
         int act = sc.nextInt();
         
@@ -153,8 +146,8 @@ public class StoryRunner {
                 break;
         }   
         
-        System.out.println("\n\nCONCLUSION\n\n");
-        System.out.println("As you journey deeper into the forest, you can't help but marvel at the wonders and dangers that lie hidden within\n"
+        System.out.println("\n\n\t\tCONCLUSION\n\n"
+                         + "As you journey deeper into the forest, you can't help but marvel at the wonders and dangers that lie hidden within\n"
                          + "its depths. With each step, you draw closer to uncovering the mysteries of the lost kingdom and claiming your destiny.\n"
                          + "The path ahead is fraught with peril, but you face the challenges with courage and determination, knowing that your fate\n"
                          + "awaits you at journey's end");

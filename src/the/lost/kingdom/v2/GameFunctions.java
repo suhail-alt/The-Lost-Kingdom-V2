@@ -56,8 +56,8 @@ public class GameFunctions {
         {
             System.in.read();
         }  
-        catch(Exception e)
-        {}  
+        catch(Exception e){
+        }  
  }
     
    

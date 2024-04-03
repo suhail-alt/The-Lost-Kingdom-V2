@@ -1,7 +1,7 @@
 package the.lost.kingdom.v2.builds;
 
-
 public class Build {
+
     String buildName;
     int healthPoints;
     int mana;
@@ -10,9 +10,9 @@ public class Build {
     String smallWeapon;
     String armour;
     int armourClass;
-    
-    public Build(){ 
-        
+
+    public Build() {
+
     }
 
 //    public Build(String buildName, int baseHp, int baseMana, String rightHand, String leftHand, String smallWeapon, String armour, int armourClass) {
@@ -25,7 +25,6 @@ public class Build {
 //        this.armour = armour;
 //        this.armourClass = armourClass;
 //    }
-
     public String getBuildName() {
         return buildName;
     }
@@ -89,16 +88,25 @@ public class Build {
     public void setArmourClass(int armourClass) {
         this.armourClass = armourClass;
     }
-    
-    public String getBuild(){
-          return "Build Name: "+ getBuildName()+
-                 "\nHealth Points: "+ getHealthPoints()+
-                 "\nMana: "+ getMana()+
-                 "\nRight Hand Weapon: "+ getRightHand()+
-                 "\nLeft Hand Weapon: "+ getLeftHand()+
-                 "\nSmall Weapon: "+ getSmallWeapon()+
-                 "\nArmour Type: "+ getArmour()+
-                 "\nArmour Class: "+ getArmourClass();
+
+    public void takeDamage(int healthPoints) {
+        setHealthPoints(healthPoints - 2);
+        System.out.println("remaining HP: " + getHealthPoints());
     }
-    
+
+    public void mainAttack() {
+        System.out.println("Punches...");
+    }
+
+    public String getBuild() {
+        return "Build Name: " + getBuildName()
+                + "\nHealth Points: " + getHealthPoints()
+                + "\nMana: " + getMana()
+                + "\nRight Hand Weapon: " + getRightHand()
+                + "\nLeft Hand Weapon: " + getLeftHand()
+                + "\nSmall Weapon: " + getSmallWeapon()
+                + "\nArmour Type: " + getArmour()
+                + "\nArmour Class: " + getArmourClass();
+    }
+
 }
