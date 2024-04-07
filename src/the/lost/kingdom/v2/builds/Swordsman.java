@@ -20,9 +20,9 @@ public class Swordsman extends Build {
                          + "you step forward and you swing your massive\n "
                          + "blade at the enemy.");
         int chance = (int) (Math.random() * 10) + 1;
-        System.out.println(chance);
+        System.out.println("\nChance of hit (1-6 = successful hit):"+chance);
         if (chance <= 6) {
-            System.out.println("You slash the enemy in half :0\nThe enemy is now dead");
+            System.out.println("\nYou slash the enemy in half \nThe enemy is now dead");
         } else {
             System.out.println("However, you swing with too much force, the enemy ducks\n"
                              + "under your blade as it gets wedged in a tree!\n"

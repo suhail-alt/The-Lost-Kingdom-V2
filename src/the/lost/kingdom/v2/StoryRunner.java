@@ -1,11 +1,55 @@
 package the.lost.kingdom.v2;
 
 import java.util.Scanner;
+import the.lost.kingdom.v2.builds.*;
 
 public class StoryRunner {
     Scanner sc = new Scanner(System.in);
+    Player p = new Player();
+    Build b;
+    GameFunctions gf = new GameFunctions();
     
      public void story() {
+         System.out.println("Please enter your name:");
+
+        String name = sc.next().trim();
+        p.setName(name);
+        System.out.println("Welcome to the story of the Lost Kingdom, " + name + "!!"
+                + "\nPlease Select a Build (Enter 1-4): "
+                + "\n1. Knight" + "\n2. Swordsman" + "\n3. Mage" + "\n4. Archer");
+        int buildNum = sc.nextInt();
+
+        while (true) {
+
+            if (!(buildNum == 1) && !(buildNum == 2) && !(buildNum == 3) && !(buildNum == 4)) {
+                System.out.println("Please Enter a Number 1-4");
+                buildNum = sc.nextInt();
+
+            } else {
+                break;
+            }
+
+        }
+
+        switch (buildNum) {
+            case 1:
+                b = new Knight();
+                break;
+            case 2:
+                b = new Swordsman();
+                break;
+            case 3:
+                b = new Mage();
+                break;
+            case 4:
+                b = new Archer();
+                break;
+
+        }
+        p.setBuild(b);
+        System.out.println("Your Build Info:\n" + p.getBuild() + "\n\n");
+
+        gf.pressEnterToContinue();
 
         System.out.println("\n\t\tINTRODUCTION: \n\nYou find yourself standing at the edge of a dense forest,\n"
                          + "the last rays of sunlight fading away. A mysterious scroll lies at your feet,\n"
@@ -65,9 +109,10 @@ public class StoryRunner {
                                          + "wary of further dangers.");
                         break;
                     case 2:
-                        System.out.println("You stand your ground, refusing to give in to the creatures' demands. A fierce battle ensues,\n"
-                                         + "but you emerge victorious. Bruised and weary, you press on, determined to uncover the secrets\n"
-                                         + "of the lost kingdom.");
+                        System.out.println("You stand your ground, refusing to give in to the creatures' demands. A fierce battle ensues,\n");
+//                                         + "but you emerge victorious. Bruised and weary, you press on, determined to uncover the secrets\n"
+//                                         + "of the lost kingdom.");
+                        b.mainAttack();
                         break;
                     
                 }
