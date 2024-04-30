@@ -1,15 +1,21 @@
 package the.lost.kingdom.v2;
 
 import java.util.Scanner;
+import the.lost.kingdom.v2.builds.*;
 
 public class GameFunctions {
-
-    Scanner sc = new Scanner(System.in);
+     Scanner sc = new Scanner(System.in);
+    Player p = new Player();
+    Build b;
 
     public void run() {
         
+        playerCreate();
+        new StoryRunner().run();
+    }
+    
+    public void playerCreate(){
 
-        new StoryRunner().story();
     }
 
     public void pressEnterToContinue() {

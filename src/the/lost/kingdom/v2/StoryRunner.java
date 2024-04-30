@@ -9,7 +9,7 @@ public class StoryRunner {
     Build b;
     GameFunctions gf = new GameFunctions();
     
-     public void story() {
+     public void run() {
          System.out.println("Please enter your name:");
 
         String name = sc.next().trim();
@@ -109,10 +109,11 @@ public class StoryRunner {
                                          + "wary of further dangers.");
                         break;
                     case 2:
-                        System.out.println("You stand your ground, refusing to give in to the creatures' demands. A fierce battle ensues,\n");
-//                                         + "but you emerge victorious. Bruised and weary, you press on, determined to uncover the secrets\n"
-//                                         + "of the lost kingdom.");
+                        System.out.println("You stand your ground, refusing to give in to the creatures' demands. A fierce battle ensues: ");
                         b.mainAttack();
+                        
+                        System.out.println("\nbut you emerge victorious. Bruised and weary, you press on, determined to uncover the secrets\n"
+                                         + "of the lost kingdom.");
                         break;
                     
                 }
